@@ -1,0 +1,15 @@
+extends ../layout.jade
+
+block contenido
+  h1 Bienvenido a FotoFan eres #{user.email}
+  div(id="imagenes")
+    for image in images
+      div(class="container")
+        div(class="col-md-12 border")
+          h2= image.title
+          if(typeof image.creator != "undefined")
+            h5 Creada por #{image.creator.username}, email: #{image.creator.email} 
+  
+  script(src="/assets/js/client.js")
+   
+  

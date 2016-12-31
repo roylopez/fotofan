@@ -1,0 +1,17 @@
+extends layout.jade
+
+block contenido
+  div(class="col-md-8 remove-float center-block big-top-space")
+    form(action="/session", method="POST", class="form")
+      div(class="form-group")
+        label(for="email") Email
+        input(type="email",name="email",id="email",placeholder="Email", class="form-control")
+      div(class="form-group")
+        label(for="password") Password
+        input(type="password",name="password",id="password",placeholder="password", class="form-control")
+      div(class="form-group")
+        div(class="row")
+          div(class="col-md-6")
+            input(type="submit", class="btn btn-success")
+          div(class="col-md-6 text-right")
+            a(href="/singup") No tengo cuenta

@@ -1,0 +1,23 @@
+doctype html
+html(lang="es")
+  head
+    title FotoFan
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/assets/app.css")
+    script(src="/socket.io/socket.io.js")
+
+  body
+  
+    nav(class="large-padding black white-text")
+      ul
+        li
+          a(href="/app") Inicio
+        li
+          a(href="/app/imagenes/new") Nueva Imagen
+        li
+          a(href="/app/imagenes") Mis Imágenes
+          
+    block contenido
+    
+    scritp(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
